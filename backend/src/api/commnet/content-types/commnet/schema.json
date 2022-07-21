@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commnets",
+  "info": {
+    "singularName": "commnet",
+    "pluralName": "commnets",
+    "displayName": "Commnet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
